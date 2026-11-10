@@ -45,7 +45,7 @@ pre{background:#1d1d27;color:#e8e8f2;padding:14px 16px;border-radius:8px;overflo
 pre code{background:none;color:inherit;padding:0;font-size:9pt;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere;}
 blockquote{margin:12px 0;padding:8px 16px;border-left:4px solid var(--accent-2);background:var(--soft);color:#3a3a48;border-radius:0 6px 6px 0;}
 table{border-collapse:collapse;width:100%;margin:12px 0;font-size:9.5pt;}
-th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top;overflow-wrap:anywhere;word-break:break-word;}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top;overflow-wrap:break-word;}
 th{background:#f0f0f7;font-weight:700;color:#2a2a38;}
 tr:nth-child(even) td{background:#fafafd;}
 hr{border:none;border-top:1px solid var(--line);margin:22px 0;}
