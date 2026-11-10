@@ -1,0 +1,100 @@
+.viewport {
+  position: fixed;
+  z-index: 80;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: min(22rem, calc(100vw - var(--space-8)));
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: color-mix(in oklab, var(--surface-raised) 90%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-floating);
+  overflow: clip;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--radius-control);
+  flex: none;
+  --tone: var(--accent-strong);
+  color: var(--tone);
+  background: color-mix(in oklab, var(--tone) 14%, transparent);
+}
+
+.success .icon { --tone: var(--success); }
+.warning .icon { --tone: var(--warning); }
+.danger .icon { --tone: var(--danger); }
+.info .icon { --tone: var(--info); }
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  color: var(--foreground);
+  font-size: var(--text-sm);
+  font-weight: 560;
+  line-height: 1.35;
+}
+
+.description {
+  margin: 2px 0 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+}
+
+.close {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .close:hover {
+    color: var(--foreground);
+    background: var(--surface-muted);
+  }
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--tone, var(--accent-strong));
+  --tone: var(--accent-strong);
+}
+
+.success { --tone: var(--success); }
+.warning { --tone: var(--warning); }
+.danger { --tone: var(--danger); }
+.info { --tone: var(--info); }

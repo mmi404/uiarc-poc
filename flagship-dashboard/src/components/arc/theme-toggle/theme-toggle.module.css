@@ -1,0 +1,31 @@
+.toggle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--control-height-md);
+  height: var(--control-height-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  background: var(--surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  overflow: clip;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .toggle:hover {
+    color: var(--foreground);
+    background: var(--surface-muted);
+  }
+}
+
+.iconWrap {
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
