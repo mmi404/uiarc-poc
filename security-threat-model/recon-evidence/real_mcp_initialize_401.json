@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","id":null,"error":{"code":-32001,"message":"Sign in to use the Arc MCP server. Your MCP client opens the sign-in page; a free account is enough. Setup: https://uiarc.dev/docs/ai#mcp","data":{"docs":"https://uiarc.dev/docs/ai#mcp"}}}

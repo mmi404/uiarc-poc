@@ -4,6 +4,9 @@ dist/
 dist-ssr/
 *.local
 
+# Security demo: generated at run time by naive_agent_sim.py
+security-threat-model/demo/sandbox-repo/
+
 # Generated doc intermediates (keep the .md source and final .pdf, drop the HTML build step)
 docs/*.html
 

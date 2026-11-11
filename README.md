@@ -21,10 +21,12 @@ project folder plus a doc under `docs/`.
 |---|---|---|
 | 1. Flagship dashboard | [`flagship-dashboard/`](flagship-dashboard/) | [`docs/01-flagship-dashboard.md`](docs/01-flagship-dashboard.md) |
 | 2. Agent-buildable showcase | [`agent-buildable/`](agent-buildable/) | [`docs/02-agent-buildable.md`](docs/02-agent-buildable.md) |
-| 3. Security threat model | not started | not started |
+| 3. Security threat model | [`security-threat-model/`](security-threat-model/) | [`docs/03-security-threat-model.md`](docs/03-security-threat-model.md) |
 
 ## Docs
 
 Each track's writeup lives in `docs/` as both Markdown and a generated PDF.
 PDFs are built from the Markdown with `docs/tools/md2pdf.py` (Python
 `markdown` + headless Chrome print-to-pdf — see that file for requirements).
+A program-level summary tying all three tracks together is in
+[`docs/00-OVERVIEW.md`](docs/00-OVERVIEW.md).

