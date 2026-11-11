@@ -40,7 +40,7 @@ p{margin:8px 0;}
 a{color:var(--accent);text-decoration:none;overflow-wrap:anywhere;}
 ul,ol{margin:8px 0 8px 2px;padding-left:22px;}
 li{margin:3px 0;}
-code{font-family:"SF Mono",Consolas,"Liberation Mono",Menlo,monospace;font-size:9.5pt;background:var(--code-bg);padding:1.5px 5px;border-radius:4px;color:#4a3bd6;overflow-wrap:anywhere;word-break:break-word;}
+code{font-family:"SF Mono",Consolas,"Liberation Mono",Menlo,monospace;font-size:9.5pt;background:var(--code-bg);padding:1.5px 5px;border-radius:4px;color:#4a3bd6;overflow-wrap:break-word;}
 pre{background:#1d1d27;color:#e8e8f2;padding:14px 16px;border-radius:8px;overflow-x:auto;font-size:9pt;line-height:1.5;border:1px solid #2a2a38;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere;}
 pre code{background:none;color:inherit;padding:0;font-size:9pt;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere;}
 blockquote{margin:12px 0;padding:8px 16px;border-left:4px solid var(--accent-2);background:var(--soft);color:#3a3a48;border-radius:0 6px 6px 0;}

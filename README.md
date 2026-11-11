@@ -20,7 +20,7 @@ project folder plus a doc under `docs/`.
 | Track | Code | Doc |
 |---|---|---|
 | 1. Flagship dashboard | [`flagship-dashboard/`](flagship-dashboard/) | [`docs/01-flagship-dashboard.md`](docs/01-flagship-dashboard.md) |
-| 2. Agent-buildable showcase | not started | not started |
+| 2. Agent-buildable showcase | [`agent-buildable/`](agent-buildable/) | [`docs/02-agent-buildable.md`](docs/02-agent-buildable.md) |
 | 3. Security threat model | not started | not started |
 
 ## Docs
